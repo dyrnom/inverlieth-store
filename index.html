@@ -7,9 +7,50 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <main>
+  <header class="site-header">
     <h1>Inverlieth</h1>
+
+    <div class="filter">
+      <label for="category-filter">Filter by category</label>
+      <select id="category-filter">
+        <option value="">All</option>
+        <optgroup label="Men">
+          <option value="men">Men — all</option>
+          <option value="men-topwear">Men — Topwear (body)</option>
+          <option value="men-bottomwear">Men — Bottomwear (legs)</option>
+        </optgroup>
+        <optgroup label="Women">
+          <option value="women">Women — all</option>
+          <option value="women-topwear">Women — Topwear (body)</option>
+          <option value="women-bottomwear">Women — Bottomwear (legs)</option>
+        </optgroup>
+      </select>
+    </div>
+  </header>
+
+  <main>
+    <div id="products" class="products">
+
+      <!--
+        One card. To add another, copy this whole <article> and change:
+          - data-category : men-topwear | men-bottomwear
+                            women-topwear | women-bottomwear
+          - the image src and alt
+          - the title and category text
+          - the order link href
+      -->
+      <article class="card" data-category="men-topwear">
+        <img class="card-image" src="./images/placeholder.svg" alt="Placeholder product image">
+        <h2 class="card-title">Product Title</h2>
+        <p class="card-category">Men — Topwear</p>
+        <a class="card-order" href="https://example.com/order">Order</a>
+      </article>
+
+    </div>
+
+    <p id="no-results" class="no-results" hidden>No items in this category.</p>
   </main>
+
   <script src="./script.js" defer></script>
 </body>
 </html>
