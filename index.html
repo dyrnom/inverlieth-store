@@ -14,15 +14,16 @@
       <label for="category-filter">Filter by category</label>
       <select id="category-filter">
         <option value="">All</option>
+        <option value="">Socks</option>
         <optgroup label="Men">
           <option value="men">Men — all</option>
-          <option value="men-topwear">Men — Topwear (body)</option>
-          <option value="men-bottomwear">Men — Bottomwear (legs)</option>
+          <option value="men-topwear">Men — Topwear</option>
+          <option value="men-legwear">Men — legwear</option>
         </optgroup>
         <optgroup label="Women">
           <option value="women">Women — all</option>
-          <option value="women-topwear">Women — Topwear (body)</option>
-          <option value="women-bottomwear">Women — Bottomwear (legs)</option>
+          <option value="women-topwear">Women — Topwear</option>
+          <option value="women-legwear">Women — legwear</option>
         </optgroup>
       </select>
     </div>
@@ -33,15 +34,155 @@
 
       <!--
         One card. To add another, copy this whole <article> and change:
-          - data-category : men-topwear | men-bottomwear
-                            women-topwear | women-bottomwear
+          - data-category : men-topwear | men-legwear
+          women-topwear | women-legwear
           - the image src and alt
           - the title and category text
           - the order link href
       -->
       <article class="card" data-category="men-topwear">
-        <img class="card-image" src="./images/hoodie-m.jpg" alt="Inverlieth men's hoodie">
-        <h2 class="card-title">Hoodie</h2>
+        <img class="card-image" src="./images/hoodie-m.jpg" alt="Men's hoodie">
+        <h2 class="card-title">Men's Hoodie</h2>
+        <p class="card-category">Men — Topwear</p>
+        <a class="card-order" href="https://example.com/order">Order</a>
+        </article>
+        
+        <article class="card" data-category="women-topwear">
+          <img class="card-image" src="./images/hoodie-w.jpg" alt="Women's hoodie">
+          <h2 class="card-title">Women's Hoodie</h2>
+          <p class="card-category">Women — Topwear</p>
+          <a class="card-order" href="https://example.com/order">Order</a>
+        </article>
+        
+        
+        <article class="card" data-category="men-topwear">
+          <img class="card-image" src="./images/jacket-m.jpg" alt="Men's jacket">
+          <h2 class="card-title">Men's Track Jacket</h2>
+          <p class="card-category">Men — Topwear</p>
+          <a class="card-order" href="https://example.com/order">Order</a>
+        </article>
+        
+        <article class="card" data-category="women-topwear">
+          <img class="card-image" src="./images/jacket-w.jpg" alt="Women's jacket">
+          <h2 class="card-title">Women's Track Jacket</h2>
+          <p class="card-category">Women — Topwear</p>
+          <a class="card-order" href="https://example.com/order">Order</a>
+        </article>
+        
+        
+        <article class="card" data-category="men-legwear">
+          <img class="card-image" src="./images/openhemtrackies-m.jpg" alt="Men's trackies">
+          <h2 class="card-title">Men's Open-Hem Trackies</h2>
+          <p class="card-category">Men — Legwear</p>
+          <a class="card-order" href="https://example.com/order">Order</a>
+        </article>
+        
+        <article class="card" data-category="women-legwear">
+          <img class="card-image" src="./images/openhemtrackies-w.jpg" alt="Inverlieth women's jacket">
+          <h2 class="card-title">Women's Open-Hem Trackies</h2>
+          <p class="card-category">Women — Legwear</p>
+          <a class="card-order" href="https://example.com/order">Order</a>
+        </article>
+        
+        
+        <article class="card" data-category="men-topwear">
+          <img class="card-image" src="./images/quarterzip-m.jpg" alt="Men's quarterzip">
+          <h2 class="card-title">Men's Quarterzip</h2>
+          <p class="card-category">Men — Topwear</p>
+          <a class="card-order" href="https://example.com/order">Order</a>
+        </article>
+        
+        <article class="card" data-category="women-topwear">
+          <img class="card-image" src="./images/quarterzip-w.jpg" alt="Women's quarterzip">
+          <h2 class="card-title">Women's Quarterzip</h2>
+          <p class="card-category">Women — Topwear</p>
+          <a class="card-order" href="https://example.com/order">Order</a>
+        </article>
+        
+        
+        <article class="card" data-category="men-topwear">
+          <img class="card-image" src="./images/shirt-m-away.jpg" alt="Men's sports shirt">
+          <h2 class="card-title">Men's Playing Shirt (Away)</h2>
+          <p class="card-category">Men — Topwear</p>
+          <a class="card-order" href="https://example.com/order">Order</a>
+        </article>
+        
+        <article class="card" data-category="women-topwear">
+          <img class="card-image" src="./images/shirt-w-away.jpg" alt="Women's sports shirt">
+          <h2 class="card-title">Women's Playing Shirt (Away)</h2>
+          <p class="card-category">Women — Topwear</p>
+          <a class="card-order" href="https://example.com/order">Order</a>
+        </article>
+        
+        <article class="card" data-category="men-topwear">
+          <img class="card-image" src="./images/shirt-m-home.jpg" alt="Men's sports shirt">
+          <h2 class="card-title">Men's Playing Shirt (Home)</h2>
+          <p class="card-category">Men — Topwear</p>
+          <a class="card-order" href="https://example.com/order">Order</a>
+        </article>
+        <article class="card" data-category="women-topwear">
+          <img class="card-image" src="./images/shirt-w-home.jpg" alt="Women's sports shirt">
+          <h2 class="card-title">Women's Playing Shirt (Home)</h2>
+          <p class="card-category">Women — Topwear</p>
+          <a class="card-order" href="https://example.com/order">Order</a>
+        </article>
+        
+        
+        <article class="card" data-category="men-legwear">
+          <img class="card-image" src="./images/shorts-away.jpg" alt="Sports shorts">
+          <h2 class="card-title">Men's Playing Shorts (Away)</h2>
+          <p class="card-category">Men — Legwear</p>
+          <a class="card-order" href="https://example.com/order">Order</a>
+        </article>
+        
+        <article class="card" data-category="women-legwear">
+          <img class="card-image" src="./images/skorts-away.jpg" alt="Sports skort">
+          <h2 class="card-title">Women's Playing Skort (Away)</h2>
+          <p class="card-category">Women — Legwear</p>
+          <a class="card-order" href="https://example.com/order">Order</a>
+        </article>
+        
+        <article class="card" data-category="men-legwear">
+          <img class="card-image" src="./images/shorts-home.jpg" alt="Sports shorts">
+          <h2 class="card-title">Men's Playing Shorts (Home)</h2>
+          <p class="card-category">Men — Legwear</p>
+          <a class="card-order" href="https://example.com/order">Order</a>
+        </article>
+        
+        <article class="card" data-category="women-legwear">
+          <img class="card-image" src="./images/skorts-home.jpg" alt="Sports skort">
+          <h2 class="card-title">Women's Playing Skort (Home)</h2>
+          <p class="card-category">Women — Legwear</p>
+          <a class="card-order" href="https://example.com/order">Order</a>
+        </article>
+        
+        
+        <article class="card" data-category="socks">
+          <img class="card-image" src="./images/socks-away.jpg" alt="Long sports socks">
+          <h2 class="card-title">Playing Socks (Away)</h2>
+          <p class="card-category">Socks</p>
+          <a class="card-order" href="https://example.com/order">Order</a>
+        </article>
+        
+        <article class="card" data-category="socks">
+          <img class="card-image" src="./images/socks-home.jpg" alt="Long sports socks">
+          <h2 class="card-title">Playing Socks (Home)</h2>
+          <p class="card-category">Socks</p>
+          <a class="card-order" href="https://example.com/order">Order</a>
+        </article>
+        
+        
+        <article class="card" data-category="women-legwear">
+          <img class="card-image" src="./images/socks-away.jpg" alt="Long sports socks">
+          <h2 class="card-title">Women's Woven Trackies</h2>
+          <p class="card-category">Women — Legwear</p>
+          <a class="card-order" href="https://example.com/order">Order</a>
+        </article>
+        
+        
+        <article class="card" data-category="men-topwear">
+          <img class="card-image" src="./images/tshirt.jpg" alt="Plain t-shirt">
+          <h2 class="card-title">Men's Plain T-Shirt</h2>
         <p class="card-category">Men — Topwear</p>
         <a class="card-order" href="https://example.com/order">Order</a>
       </article>
